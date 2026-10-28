@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "laadheld",
-  "main": "worker/protected.mjs",
+  "main": "worker/public.mjs",
   "account_id": "90c60240a63503cadd817e6b7cf011c4",
   "compatibility_date": "2026-10-25",
   "compatibility_flags": [
@@ -9,9 +9,6 @@
   ],
   "workers_dev": true,
   "preview_urls": false,
-  "vars": {
-    "LAADHELD_USER": "eduard"
-  },
   "observability": {
     "enabled": true,
     "head_sampling_rate": 0.1,

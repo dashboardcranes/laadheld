@@ -1,10 +1,10 @@
 import {readFile} from 'node:fs/promises';
 const code=await readFile(new URL('../worker/index.js',import.meta.url),'utf8');
 const {default:app}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
-const {default:protectedApp}=await import('../worker/protected.mjs');
-if(typeof app?.fetch!=='function'||typeof protectedApp?.fetch!=='function')throw Error('Worker fetch ontbreekt');
+const {default:publicApp}=await import('../worker/public.mjs');
+if(typeof app?.fetch!=='function'||typeof publicApp?.fetch!=='function')throw Error('Worker fetch ontbreekt');
 const config=JSON.parse(await readFile(new URL('../wrangler.jsonc',import.meta.url),'utf8'));
-if(config.name!=='laadheld'||config.main!=='worker/protected.mjs')throw Error('Onjuiste Cloudflare-entrypoint');
-const result=await protectedApp.fetch(new Request('https://test/'),{}, {waitUntil(){}});
-if(result.status!==503)throw Error('Worker moet gesloten blijven zonder wachtwoord');
-console.log('Cloudflare-entrypoint geldig; ontbrekend wachtwoord blokkeert toegang.');
+if(config.name!=='laadheld'||config.main!=='worker/public.mjs')throw Error('Onjuiste Cloudflare-entrypoint');
+const result=await publicApp.fetch(new Request('https://test/'),{}, {waitUntil(){}});
+if(result.status!==200||result.headers.has('WWW-Authenticate'))throw Error('Worker moet openbaar openen zonder wachtwoord');
+console.log('Cloudflare-entrypoint geldig; site opent openbaar zonder wachtwoord.');
