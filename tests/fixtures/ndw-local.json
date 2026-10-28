@@ -1,0 +1,242 @@
+[
+  [
+    "NL-NUO-67dc971e4dc15a588c815b613e22f343",
+    "Gevers Deynootweg 205",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-24T14:55:13Z",
+    [
+      4.289343,
+      52.117401
+    ],
+    [
+      {
+        "total": 2,
+        "available": 2,
+        "power_max": 13800.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-cbfc89863a736e2c4959efb6a4ebea66",
+    "Badhuisweg 12",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-24T21:06:34Z",
+    [
+      4.28583,
+      52.111046
+    ],
+    [
+      {
+        "total": 2,
+        "available": 2,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-e953d3a1fba2ec6a2d32ebd529343b42",
+    "Badhuisweg 40",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-14T18:40:09Z",
+    [
+      4.286914,
+      52.110432
+    ],
+    [
+      {
+        "total": 2,
+        "available": 0,
+        "power_max": 13800.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-156fb891d17e1141f62e40d95c5425c8",
+    "Arnhemsestraat 35",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-25T08:30:19Z",
+    [
+      4.28944,
+      52.111359
+    ],
+    [
+      {
+        "total": 4,
+        "available": 1,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-c8e0ea86d4124779f7db49922a4b4dd9",
+    "Antonie Duyckstraat 66",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-25T08:13:48Z",
+    [
+      4.28951,
+      52.106468
+    ],
+    [
+      {
+        "total": 6,
+        "available": 3,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-bc792e7d75a0414cd5f30f01dff4766a",
+    "Gevers Deynootstraat 11",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-25T05:46:42Z",
+    [
+      4.286638,
+      52.113232
+    ],
+    [
+      {
+        "total": 2,
+        "available": 1,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-ce410e6a6ab3b66451531b224d54a33f",
+    "Badhuiskade 20",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-24T11:20:38Z",
+    [
+      4.278498,
+      52.106964
+    ],
+    [
+      {
+        "total": 2,
+        "available": 1,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-3bf8bd0c6a1a293f51d8e1f8ebde6f94",
+    "Arnhemsestraat 1",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-01T00:48:55Z",
+    [
+      4.288189,
+      52.111069
+    ],
+    [
+      {
+        "total": 2,
+        "available": 0,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-49514575255787a79f5e65be6fb86312",
+    "Alkmaarsestraat 26",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-25T07:41:25Z",
+    [
+      4.287813,
+      52.114132
+    ],
+    [
+      {
+        "total": 2,
+        "available": 1,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ],
+  [
+    "NL-NUO-9d5739f44fdbfbd25d0487db26b8dec5",
+    "Badhuisweg 101",
+    "Vattenfall InCharge",
+    "NUO",
+    "2026-10-19T09:46:48Z",
+    [
+      4.291068,
+      52.107796
+    ],
+    [
+      {
+        "total": 2,
+        "available": 2,
+        "power_max": 11040.0,
+        "power_type": "AC3",
+        "tariff_ids": [
+          "2000374062-2000011292"
+        ],
+        "connector_type": "IEC_62196_T2",
+        "connector_format": "SOCKET"
+      }
+    ]
+  ]
+]

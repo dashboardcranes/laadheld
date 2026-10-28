@@ -1,0 +1,4 @@
+'use strict';
+function mapPointStats(feature,type='all',now=Date.now()){let p=feature.properties||{},groups=(p.availabilities||[]).filter(a=>type==='all'||(type==='DC'?a.power_type==='DC':String(a.power_type).startsWith('AC'))),known=groups.length>0&&groups.every(a=>typeof a.available==='number'&&Number.isFinite(a.available)&&a.available>=0&&typeof a.total==='number'&&a.total>=a.available),available=groups.reduce((s,a)=>s+(Number(a.available)||0),0),total=groups.reduce((s,a)=>s+(Number(a.total)||0),0),stamp=Date.parse(p.last_updated),old=!Number.isFinite(stamp)||now-stamp>86400000||stamp>now+300000;return {groups,known,available,total,old,color:!known||old?'#75848a':available>0?'#087f5b':'#b94738'}}
+function featureToLocationRow(f){let p=f.properties||{};return [f.id,p.address||'',p.operator_name||'',p.cpo_id||'',p.last_updated,f.geometry?.coordinates,p.availabilities||[]]}
+if(typeof module!=='undefined')module.exports={mapPointStats,featureToLocationRow};

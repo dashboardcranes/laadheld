@@ -1,0 +1,2336 @@
+{
+  "naam": "Laadpas.co laadpassen-dataset",
+  "uitgever": "Laadpas.co",
+  "url": "https://laadpas.co/laadpassen.json",
+  "licentie": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.nl)",
+  "citeer_als": "Bron: Laadpas.co, laadpassen vergelijken (https://laadpas.co)",
+  "methodologie": "https://laadpas.co/zo-vergelijken-wij",
+  "correcties": "https://laadpas.co/meld-een-fout",
+  "score_gewichten": [
+    {
+      "onderdeel": "Kosten",
+      "gewicht_pct": 70,
+      "uitleg": "Geschatte maandkosten bij 160 kWh en 8 laadsessies. De goedkoopste pas krijgt een 10, de duurste een 0, de rest naar plek in de rij."
+    },
+    {
+      "onderdeel": "Dekking",
+      "gewicht_pct": 20,
+      "uitleg": "Of de pas bij alle palen in Nederland werkt en in hoeveel Europese landen."
+    },
+    {
+      "onderdeel": "Gemak",
+      "gewicht_pct": 10,
+      "uitleg": "Snelladen mogelijk, en hoeveel manieren er zijn om te laden (pas, app, sleutelhanger)."
+    }
+  ],
+  "passen": [
+    {
+      "slug": "anwb",
+      "naam": "ANWB",
+      "url": "https://laadpas.co/anwb",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Verzending laadpas: € 2,95."
+        ],
+        "provenance": {
+          "bron": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Zonder abonnement: € 0 per maand.",
+          "Met abonnement: € 3,99 per maand."
+        ],
+        "provenance": {
+          "bron": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "Zonder abonnement: € 0,89 per sessie in Nederland; met abonnement: geen ANWB-starttarief."
+        ],
+        "provenance": {
+          "bron": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement/veelgestelde-vragen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Locatiegebonden tarief zonder ANWB-opslag; volledige prijs in de app."
+        ],
+        "provenance": {
+          "bron": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Locatiegebonden; bij Fastned 10% korting met actief abonnement, volgens actievoorwaarden."
+        ],
+        "provenance": {
+          "bron": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "dekking_nl": "Alle laadpalen in NL",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Luxembrug",
+        "Nederland",
+        "Oostenrijk",
+        "Spanje",
+        "Zwitserland",
+        "Denemarken",
+        "Finland",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 75.99,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 7.6,
+        "kosten": 7.1,
+        "dekking": 8.7,
+        "gemak": 8.7
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://www.anwb.nl/auto/elektrisch-rijden/laadpas-abonnement"
+      },
+      "variants": [
+        {
+          "name": "Zonder abonnement",
+          "month": 0,
+          "once": 2.95,
+          "start": 0.89,
+          "pct": 0,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Abonnement",
+          "month": 3.99,
+          "once": 2.95,
+          "start": 0,
+          "pct": 0,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "slug": "bonnet",
+      "naam": "Bonnet",
+      "url": "https://laadpas.co/bonnet",
+      "maandprijs_eur": {
+        "waarde": 2,
+        "provenance": {
+          "bron": "https://www.joinbonnet.com/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "17 juli 2026",
+          "pagina": "https://laadpas.co/bonnet"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Zonder abonnementGratis"
+        ],
+        "provenance": {
+          "bron": "https://www.joinbonnet.com/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "17 juli 2026",
+          "pagina": "https://laadpas.co/bonnet"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Light Boost abonnement€ 2,00 p.m.",
+          "Turbo Boost abonnement€ 9,50 p.m."
+        ],
+        "provenance": {
+          "bron": "https://www.joinbonnet.com/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "17 juli 2026",
+          "pagina": "https://laadpas.co/bonnet"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per sessie"
+        ],
+        "provenance": {
+          "bron": "https://www.joinbonnet.com/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "17 juli 2026",
+          "pagina": "https://laadpas.co/bonnet"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.joinbonnet.com/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "17 juli 2026",
+          "pagina": "https://laadpas.co/bonnet"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.joinbonnet.com/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "17 juli 2026",
+          "pagina": "https://laadpas.co/bonnet"
+        }
+      },
+      "dekking_nl": "Beperkte dekking in NL",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 74,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 8.7,
+        "kosten": 9.4,
+        "dekking": 6.8,
+        "gemak": 7.3
+      }
+    },
+    {
+      "slug": "chargepoint",
+      "naam": "Chargepoint",
+      "url": "https://laadpas.co/chargepoint",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.chargepoint.com/nl-nl/drivers",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/chargepoint"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Kosten laadpasGratis"
+        ],
+        "provenance": {
+          "bron": "https://www.chargepoint.com/nl-nl/drivers",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/chargepoint"
+        }
+      },
+      "abonnement": {
+        "waarde": [],
+        "provenance": {
+          "bron": "https://www.chargepoint.com/nl-nl/drivers",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/chargepoint"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per sessie"
+        ],
+        "provenance": {
+          "bron": "https://www.chargepoint.com/nl-nl/drivers",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/chargepoint"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.chargepoint.com/nl-nl/drivers",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/chargepoint"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.chargepoint.com/nl-nl/drivers",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/chargepoint"
+        }
+      },
+      "dekking_nl": "Niet overal beschikbaar",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 72,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 9.4,
+        "kosten": 10,
+        "dekking": 6.8,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "e-flux",
+      "naam": "E-Flux",
+      "url": "https://laadpas.co/e-flux",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.e-flux.io/nl/producten/laadpassen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "€ 9,99 per laadpas, inclusief btw."
+        ],
+        "provenance": {
+          "bron": "https://www.e-flux.io/nl/producten/laadpassen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Flex: geen maandbedrag.",
+          "Comfort: € 3,23 per maand."
+        ],
+        "provenance": {
+          "bron": "https://www.e-flux.io/nl/producten/laadpassen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "Flex: € 0,31 per sessie. Comfort: geen regulier starttarief.",
+          "Extra € 0,48 per sessie via Hubject, Gireve of e-clearing."
+        ],
+        "provenance": {
+          "bron": "https://www.e-flux.io/nl/producten/laadpassen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Exploitanttarief; Flex heeft € 0,024/kWh opslag bij niet-E-Flux-punten. Comfort: geen reguliere opslag. Controleer roamingroute."
+        ],
+        "provenance": {
+          "bron": "https://www.e-flux.io/nl/producten/laadpassen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Exploitanttarief; dezelfde abonnements- en netwerktoeslagen kunnen gelden."
+        ],
+        "provenance": {
+          "bron": "https://www.e-flux.io/nl/producten/laadpassen",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Finland",
+        "Ierland",
+        "Italië",
+        "Nederland",
+        "Polen",
+        "Spanje",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 79.07,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 5.8,
+        "kosten": 4.7,
+        "dekking": 8.2,
+        "gemak": 8.7
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://www.e-flux.io/nl/producten/laadpassen"
+      },
+      "variants": [
+        {
+          "name": "Flex",
+          "month": 0,
+          "once": 9.99,
+          "start": 0.31,
+          "pct": null,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Comfort",
+          "month": 3.23,
+          "once": 9.99,
+          "start": 0,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": [
+        "Road",
+        "Eflux",
+        "E Flux"
+      ]
+    },
+    {
+      "slug": "ecotap",
+      "naam": "Ecotap",
+      "url": "https://laadpas.co/ecotap",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://portal.ecotap.nl/laadpas-aanvragen/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/ecotap"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "LaadpasGratis",
+          "Laadsleutel €8,75 excl. btw"
+        ],
+        "provenance": {
+          "bron": "https://portal.ecotap.nl/laadpas-aanvragen/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/ecotap"
+        }
+      },
+      "abonnement": {
+        "waarde": [],
+        "provenance": {
+          "bron": "https://portal.ecotap.nl/laadpas-aanvragen/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/ecotap"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per sessie"
+        ],
+        "provenance": {
+          "bron": "https://portal.ecotap.nl/laadpas-aanvragen/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/ecotap"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Ecotap laadpalenCPO tarief",
+          "Andere laadpalenCPO tarief + €0,02 per kWh"
+        ],
+        "provenance": {
+          "bron": "https://portal.ecotap.nl/laadpas-aanvragen/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/ecotap"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief + €0,02 per kWh"
+        ],
+        "provenance": {
+          "bron": "https://portal.ecotap.nl/laadpas-aanvragen/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/ecotap"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 75.2,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 8.6,
+        "kosten": 8.2,
+        "dekking": 9.6,
+        "gemak": 8.7
+      }
+    },
+    {
+      "slug": "elec2go",
+      "naam": "Elec2Go",
+      "url": "https://laadpas.co/elec2go",
+      "maandprijs_eur": {
+        "waarde": 2.5,
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/elec2go"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Zonder abonnement€5,- eenmalig"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/elec2go"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Met abonnement€ 2,50 p.m."
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/elec2go"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per sessie"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/elec2go"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Zonder abonnementCPO tarief + €0,01 per kWh",
+          "Met abonnementCPO tarief"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/elec2go"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Zonder abonnementCPO tarief + €0,01 per kWh",
+          "Met abonnementCPO tarief + €0,01 per kWh"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/elec2go"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Italië",
+        "Nederland",
+        "Noorwegen",
+        "Spanje",
+        "Zweden",
+        "En vele meer",
+        "Denemarken",
+        "Estland",
+        "Finland",
+        "Ierland",
+        "Letland",
+        "Luxembrug",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zwitserland"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 76.1,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 7.1,
+        "kosten": 5.9,
+        "dekking": 9.8,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "eneco",
+      "naam": "Eneco",
+      "url": "https://laadpas.co/eneco",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.eneco-emobility.com/nl-nl/klantenservice/laadpas-onderweg/laadpas-van-eneco-emobility?audience=home",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Pas: € 2,95 verzending; druppel: € 4,95."
+        ],
+        "provenance": {
+          "bron": "https://www.eneco-emobility.com/nl-nl/klantenservice/laadpas-onderweg/laadpas-van-eneco-emobility?audience=home",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Zonder abonnement: € 0; abonnement: € 3 per maand."
+        ],
+        "provenance": {
+          "bron": "https://www.eneco-emobility.com/nl-nl/klantenservice/laadpas-onderweg/laadpas-van-eneco-emobility?audience=home",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "€ 0,39 per sessie zonder abonnement; met abonnement geen starttarief. Eigen netwerk: controleer uitzondering in de app."
+        ],
+        "provenance": {
+          "bron": "https://www.eneco-emobility.com/nl-nl/laadtarieven",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Eigen netwerk variabel; Allego € 0,63/kWh; overige publieke punten € 0,54/kWh. Niet-publieke Road-punten volgen het exploitanttarief."
+        ],
+        "provenance": {
+          "bron": "https://www.eneco-emobility.com/nl-nl/laadtarieven",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Tesla € 0,69; Ionity € 0,74; Fastned € 0,77; overige € 0,80 per kWh. Eigen netwerk variabel.",
+          "Nederland: blokkeerkosten € 0,05/min na 5 uur, max. € 48; niet tussen 23:00–07:00. Controleer toepasselijkheid in de app."
+        ],
+        "provenance": {
+          "bron": "https://www.eneco-emobility.com/nl-nl/laadtarieven",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Luxembrug",
+        "Nederland",
+        "Oostenrijk",
+        "Zwitserland",
+        "Denemarken",
+        "Estland",
+        "Finland",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Noorwegen",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 161.4,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 3.2,
+        "kosten": 0.6,
+        "dekking": 9.8,
+        "gemak": 8.7
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://www.eneco-emobility.com/nl-nl/laadtarieven"
+      },
+      "variants": [
+        {
+          "name": "Zonder abonnement",
+          "month": 0,
+          "once": 2.95,
+          "start": 0.39,
+          "pct": null,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Abonnement",
+          "month": 3,
+          "once": 2.95,
+          "start": 0,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": [
+        "Eneco eMobility"
+      ]
+    },
+    {
+      "slug": "essent",
+      "naam": "Essent",
+      "url": "https://laadpas.co/essent",
+      "maandprijs_eur": {
+        "waarde": 4,
+        "provenance": {
+          "bron": "https://www.essent.nl/elektrisch-laden/laadpas/aanvragen?propositie=particulier-laadpas&laadpaal=onbekend&laadpas=nee&ecmp=aff:wbs:ldps::keuze:laadpas-affiliate:do",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/essent"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [],
+        "provenance": {
+          "bron": "https://www.essent.nl/elektrisch-laden/laadpas/aanvragen?propositie=particulier-laadpas&laadpaal=onbekend&laadpas=nee&ecmp=aff:wbs:ldps::keuze:laadpas-affiliate:do",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/essent"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Abonnement€4,- p.m."
+        ],
+        "provenance": {
+          "bron": "https://www.essent.nl/elektrisch-laden/laadpas/aanvragen?propositie=particulier-laadpas&laadpaal=onbekend&laadpas=nee&ecmp=aff:wbs:ldps::keuze:laadpas-affiliate:do",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/essent"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per laadsessie"
+        ],
+        "provenance": {
+          "bron": "https://www.essent.nl/elektrisch-laden/laadpas/aanvragen?propositie=particulier-laadpas&laadpaal=onbekend&laadpas=nee&ecmp=aff:wbs:ldps::keuze:laadpas-affiliate:do",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/essent"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.essent.nl/elektrisch-laden/laadpas/aanvragen?propositie=particulier-laadpas&laadpaal=onbekend&laadpas=nee&ecmp=aff:wbs:ldps::keuze:laadpas-affiliate:do",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/essent"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.essent.nl/elektrisch-laden/laadpas/aanvragen?propositie=particulier-laadpas&laadpaal=onbekend&laadpas=nee&ecmp=aff:wbs:ldps::keuze:laadpas-affiliate:do",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/essent"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in NL",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Luxembrug",
+        "Nederland",
+        "Oostenrijk",
+        "Zwitserland"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 76,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 7,
+        "kosten": 6.5,
+        "dekking": 7.3,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "ev-company",
+      "naam": "EV Company",
+      "url": "https://laadpas.co/ev-company",
+      "maandprijs_eur": {
+        "waarde": 3.5,
+        "provenance": {
+          "bron": "https://evcompany.eu/product/laadpas/ev-laadpas-opladen-elektrische-auto/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/ev-company"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Laadpas€5,00 eenmalig",
+          "Sleutelhanger€5,00 eenmalig"
+        ],
+        "provenance": {
+          "bron": "https://evcompany.eu/product/laadpas/ev-laadpas-opladen-elektrische-auto/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/ev-company"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Abonnement€3,50 p.m."
+        ],
+        "provenance": {
+          "bron": "https://evcompany.eu/product/laadpas/ev-laadpas-opladen-elektrische-auto/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/ev-company"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,35 per sessie"
+        ],
+        "provenance": {
+          "bron": "https://evcompany.eu/product/laadpas/ev-laadpas-opladen-elektrische-auto/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/ev-company"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACCPO tarief + €0,025 per kWh"
+        ],
+        "provenance": {
+          "bron": "https://evcompany.eu/product/laadpas/ev-laadpas-opladen-elektrische-auto/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/ev-company"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief + €0,025 per kWh"
+        ],
+        "provenance": {
+          "bron": "https://evcompany.eu/product/laadpas/ev-laadpas-opladen-elektrische-auto/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/ev-company"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Italië",
+        "Luxembrug",
+        "Nederland",
+        "Oostenrijk",
+        "Slovenië",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zwitserland",
+        "Denemarken",
+        "Finland",
+        "Ierland",
+        "Letland",
+        "Noorwegen",
+        "Polen",
+        "Spanje",
+        "Zweden",
+        "Estland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 82.3,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 5,
+        "kosten": 2.9,
+        "dekking": 9.8,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "green-caravan",
+      "naam": "Green Caravan",
+      "url": "https://laadpas.co/green-caravan",
+      "maandprijs_eur": {
+        "waarde": 3.5,
+        "provenance": {
+          "bron": "https://www.greencrvn.com/nl/app/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/green-caravan"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Flex cardGratis",
+          "Borg laadpas€5,15"
+        ],
+        "provenance": {
+          "bron": "https://www.greencrvn.com/nl/app/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/green-caravan"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Premium card€3,50 p.m."
+        ],
+        "provenance": {
+          "bron": "https://www.greencrvn.com/nl/app/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/green-caravan"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Zonder abonnement€0,42",
+          "Met abonnement€0,-"
+        ],
+        "provenance": {
+          "bron": "https://www.greencrvn.com/nl/app/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/green-caravan"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.greencrvn.com/nl/app/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/green-caravan"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.greencrvn.com/nl/app/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/green-caravan"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 75.5,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 8.1,
+        "kosten": 7.6,
+        "dekking": 9.5,
+        "gemak": 8.7
+      }
+    },
+    {
+      "slug": "groendus",
+      "naam": "Groendus",
+      "url": "https://laadpas.co/groendus",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/groendus"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Kosten laadpasGratis"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/groendus"
+        }
+      },
+      "abonnement": {
+        "waarde": [],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/groendus"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Groendus laadpalen€0,60 per sessie",
+          "Overige laadpalen€0,73 per sessie"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/groendus"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Groendus laadpalen€0,55 per kWh",
+          "Overige laadpalenCPO tarief + €0,015 per kWh"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/groendus"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief + €0,015 per kWh"
+        ],
+        "provenance": {
+          "bron": null,
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/groendus"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Italië",
+        "Luxembrug",
+        "Zwitserland"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 79.2,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 5,
+        "kosten": 4.1,
+        "dekking": 7.1,
+        "gemak": 7.3
+      }
+    },
+    {
+      "slug": "justplugin",
+      "naam": "Justplugin",
+      "url": "https://laadpas.co/justplugin",
+      "maandprijs_eur": {
+        "waarde": 4.83,
+        "provenance": {
+          "bron": "https://justplugin.nl/laadpassen/justplugin-laadpas/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/justplugin"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [],
+        "provenance": {
+          "bron": "https://justplugin.nl/laadpassen/justplugin-laadpas/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/justplugin"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Met abonnement€4,83 p.m."
+        ],
+        "provenance": {
+          "bron": "https://justplugin.nl/laadpassen/justplugin-laadpas/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/justplugin"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per sessie",
+          "Transactiekosten7,5% bij niet JustPlugin laadpalen"
+        ],
+        "provenance": {
+          "bron": "https://justplugin.nl/laadpassen/justplugin-laadpas/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/justplugin"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://justplugin.nl/laadpassen/justplugin-laadpas/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/justplugin"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefCPO tarief"
+        ],
+        "provenance": {
+          "bron": "https://justplugin.nl/laadpassen/justplugin-laadpas/",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/justplugin"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 82.23,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 5.4,
+        "kosten": 3.5,
+        "dekking": 9.8,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "maingau",
+      "naam": "Maingau",
+      "url": "https://laadpas.co/maingau",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.maingau-energie.de/e-mobilitaet/autostrom/anmeldung",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/maingau"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "LaadappGratis",
+          "Laadpas€ 9,99 eenmalig (optioneel)"
+        ],
+        "provenance": {
+          "bron": "https://www.maingau-energie.de/e-mobilitaet/autostrom/anmeldung",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/maingau"
+        }
+      },
+      "abonnement": {
+        "waarde": [],
+        "provenance": {
+          "bron": "https://www.maingau-energie.de/e-mobilitaet/autostrom/anmeldung",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/maingau"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- per sessie"
+        ],
+        "provenance": {
+          "bron": "https://www.maingau-energie.de/e-mobilitaet/autostrom/anmeldung",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/maingau"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Ionity, Lidl, Vattenfall e.a.€ 0,52 / kWh",
+          "Overige laadpalen€ 0,72 / kWh",
+          "Allego, EnBW, Fastned e.a.€ 0,82 / kWh"
+        ],
+        "provenance": {
+          "bron": "https://www.maingau-energie.de/e-mobilitaet/autostrom/anmeldung",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/maingau"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Ionity snellader€ 0,62 / kWh",
+          "Overige snelladers€ 0,72 / kWh",
+          "Allego, EnBW, Fastned e.a.€ 0,82 / kWh"
+        ],
+        "provenance": {
+          "bron": "https://www.maingau-energie.de/e-mobilitaet/autostrom/anmeldung",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/maingau"
+        }
+      },
+      "dekking_nl": "Beperkt aanbod in Nederland",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Finland",
+        "Frankrijk",
+        "Luxembrug",
+        "Nederland",
+        "Oostenrijk",
+        "Spanje",
+        "Zwitserland",
+        "Estland",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Noorwegen",
+        "Polen",
+        "Slovenië",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 83.2,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 4,
+        "kosten": 2.4,
+        "dekking": 6.8,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "mkb-brandstof",
+      "naam": "MKB Brandstof",
+      "url": "https://laadpas.co/mkb-brandstof",
+      "maandprijs_eur": {
+        "waarde": 7.6,
+        "provenance": {
+          "bron": "https://www.mkb-brandstof.nl/diensten/laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/mkb-brandstof"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Zonder abonnementGratis"
+        ],
+        "provenance": {
+          "bron": "https://www.mkb-brandstof.nl/diensten/laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/mkb-brandstof"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Met abonnement€7,60 p.m."
+        ],
+        "provenance": {
+          "bron": "https://www.mkb-brandstof.nl/diensten/laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/mkb-brandstof"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Zonder abonnement€0,39 starttarief",
+          "Met abonnement€0,- starttarief"
+        ],
+        "provenance": {
+          "bron": "https://www.mkb-brandstof.nl/diensten/laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/mkb-brandstof"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief AC€0,57 per kWh"
+        ],
+        "provenance": {
+          "bron": "https://www.mkb-brandstof.nl/diensten/laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/mkb-brandstof"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tarief€0,74 per kWh"
+        ],
+        "provenance": {
+          "bron": "https://www.mkb-brandstof.nl/diensten/laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "25 september 2026",
+          "pagina": "https://laadpas.co/mkb-brandstof"
+        }
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Italië",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "En vele meer",
+        "Estland",
+        "Ierland",
+        "Letland",
+        "Luxembrug",
+        "Slovenië",
+        "Zweden",
+        "Zwitserland"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 98.8,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 4.1,
+        "kosten": 1.8,
+        "dekking": 9.5,
+        "gemak": 10
+      }
+    },
+    {
+      "slug": "shell-recharge",
+      "naam": "Shell Recharge",
+      "url": "https://laadpas.co/shell-recharge",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "abonnement": {
+        "waarde": [
+          "Basic: € 0 per maand. Premium: € 7,99 per maand, maandelijks opzegbaar."
+        ],
+        "provenance": {
+          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "€ 0,35 transactiekosten per sessie bij Basic en Premium; aanvullende blokkeerkosten mogelijk."
+        ],
+        "provenance": {
+          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Bij andere aanbieders: € 0,50 / € 0,55 / € 0,60 per kWh, afhankelijk van laadpunt; exact tarief in Shell App."
+        ],
+        "provenance": {
+          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Eigen Shell-snelladers: Basic € 0,78/kWh; Premium € 0,59/kWh.",
+          "Andere aanbieders: € 0,79 / € 0,82 / € 0,85 per kWh; controleer blokkeerkosten."
+        ],
+        "provenance": {
+          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 162.8,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 3,
+        "kosten": 0,
+        "dekking": 9.8,
+        "gemak": 10
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://www.shell.nl/elektrisch-opladen/Tarieven.html"
+      },
+      "variants": [
+        {
+          "name": "Basic",
+          "month": 0,
+          "once": null,
+          "start": 0.35,
+          "pct": null,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Premium",
+          "month": 7.99,
+          "once": null,
+          "start": 0.35,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": [
+        "Shell",
+        "NewMotion"
+      ]
+    },
+    {
+      "slug": "tango-electric",
+      "naam": "Tango electric",
+      "url": "https://laadpas.co/tango-electric",
+      "maandprijs_eur": {
+        "waarde": 2.48,
+        "provenance": {
+          "bron": "https://www.tango.nl/elektrisch-laden/tango-electric-laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/tango-electric"
+        }
+      },
+      "kosten_pas": {
+        "waarde": [],
+        "provenance": {
+          "bron": "https://www.tango.nl/elektrisch-laden/tango-electric-laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/tango-electric"
+        }
+      },
+      "abonnement": {
+        "waarde": [
+          "Abonnement€ 2,48 (excl. btw) p.m."
+        ],
+        "provenance": {
+          "bron": "https://www.tango.nl/elektrisch-laden/tango-electric-laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/tango-electric"
+        }
+      },
+      "starttarief": {
+        "waarde": [
+          "Starttarief€0,- starttarief"
+        ],
+        "provenance": {
+          "bron": "https://www.tango.nl/elektrisch-laden/tango-electric-laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/tango-electric"
+        }
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Laadtarief ACLaadpaal tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.tango.nl/elektrisch-laden/tango-electric-laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/tango-electric"
+        }
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Snellaad tariefLaadpaal tarief"
+        ],
+        "provenance": {
+          "bron": "https://www.tango.nl/elektrisch-laden/tango-electric-laadpas",
+          "bron_type": "openbare tariefgegevens; bron is de aanbiederspagina",
+          "bijgewerkt": "13 juli 2026",
+          "pagina": "https://laadpas.co/tango-electric"
+        }
+      },
+      "dekking_nl": "99% dekking in Nederland",
+      "eu_landen": [
+        "België",
+        "Denemarken",
+        "Duitsland",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Griekenland",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Nederland",
+        "Noorwegen",
+        "Oostenrijk",
+        "Polen",
+        "Slovenië",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "Zwitserland",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 74.48,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 8.4,
+        "kosten": 8.8,
+        "dekking": 7,
+        "gemak": 8.7
+      }
+    },
+    {
+      "slug": "tap-electric",
+      "naam": "Tap Electric",
+      "url": "https://laadpas.co/tap-electric",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://tapelectric.app/nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Gratis laadpas bij Light en Roamer; controleer eventuele overige eenmalige kosten."
+        ],
+        "provenance": {
+          "bron": "https://tapelectric.app/nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Light: € 0 per maand",
+          "Roamer: € 2,50 per maand",
+          "Family: € 4 per maand"
+        ],
+        "provenance": {
+          "bron": "https://tapelectric.app/nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "Light: 5% transactiekosten per sessie",
+          "Roamer en Family: 0% transactiekosten; eventuele kosten van de laadpaal blijven van toepassing."
+        ],
+        "provenance": {
+          "bron": "https://tapelectric.app/nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Exploitanttarief plus de transactiekosten van het gekozen abonnement."
+        ],
+        "provenance": {
+          "bron": "https://tapelectric.app/nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Exploitanttarief plus de transactiekosten van het gekozen abonnement."
+        ],
+        "provenance": {
+          "bron": "https://tapelectric.app/nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Frankrijk",
+        "Nederland",
+        "Oostenrijk",
+        "Verenigd Koninkrijk",
+        "Italië",
+        "Luxembrug",
+        "Spanje"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 78.1,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 6.1,
+        "kosten": 5.3,
+        "dekking": 7.6,
+        "gemak": 8.7
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://tapelectric.app/nl/laadpas/"
+      },
+      "variants": [
+        {
+          "name": "Light",
+          "month": 0,
+          "once": 0,
+          "start": 0,
+          "pct": 5,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Roamer",
+          "month": 2.5,
+          "once": 0,
+          "start": 0,
+          "pct": 0,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Family",
+          "month": 4,
+          "once": 0,
+          "start": 0,
+          "pct": 0,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": [
+        "Tap",
+        "Tap Tag"
+      ]
+    },
+    {
+      "slug": "vattenfall-incharge",
+      "naam": "Vattenfall InCharge",
+      "url": "https://laadpas.co/vattenfall-incharge",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://incharge.vattenfall.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Gratis laadpas; geen aanschafkosten."
+        ],
+        "provenance": {
+          "bron": "https://incharge.vattenfall.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Geen abonnementskosten."
+        ],
+        "provenance": {
+          "bron": "https://incharge.vattenfall.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "Bij andere exploitanten geldt een starttarief; exact bedrag niet opnieuw bevestigd."
+        ],
+        "provenance": {
+          "bron": "https://incharge.vattenfall.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "partial"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Eigen palen hebben locatie- en concessiegebonden tarieven; kijk in de app voor jouw locatie."
+        ],
+        "provenance": {
+          "bron": "https://incharge.vattenfall.nl/onze-tarieven",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Tarieven verschillen per locatie en vermogen; geen uniform snellaadtarief."
+        ],
+        "provenance": {
+          "bron": "https://incharge.vattenfall.nl/onze-tarieven",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "dekking_nl": "Alle laadpalen in Nederland",
+      "eu_landen": [
+        "België",
+        "Duitsland",
+        "Nederland",
+        "Oostenrijk",
+        "Zwitserland",
+        "Denemarken",
+        "Estland",
+        "Finland",
+        "Frankrijk",
+        "Ierland",
+        "Italië",
+        "Letland",
+        "Luxembrug",
+        "Noorwegen",
+        "Polen",
+        "Spanje",
+        "Tsjechië",
+        "Verenigd Koninkrijk",
+        "Zweden",
+        "En vele meer"
+      ],
+      "geschatte_maandkosten_eur": {
+        "waarde": 124.1,
+        "aanname": "160 kWh, 8 sessies per maand"
+      },
+      "score": {
+        "totaal": 3.8,
+        "kosten": 1.2,
+        "dekking": 9.6,
+        "gemak": 10
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://incharge.vattenfall.nl/laadpas/"
+      },
+      "variants": [
+        {
+          "name": "Laadpas",
+          "month": 0,
+          "once": 0,
+          "start": null,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": [
+        "Vattenfall",
+        "InCharge",
+        "Nuon"
+      ]
+    },
+    {
+      "slug": "greenchoice",
+      "naam": "Greenchoice",
+      "url": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "abonnement": {
+        "waarde": [
+          "Zonder abonnement: geen maandkosten.",
+          "Abonnement: € 3,99/maand; Greenchoice-klanten € 2,99/maand."
+        ],
+        "provenance": {
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "Zonder abonnement: € 0,40 per sessie. Startkosten bij abonnement niet afzonderlijk bevestigd."
+        ],
+        "provenance": {
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "partial"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Exploitant- en locatiegebonden; app toont kWh-, start-, tijd- en connectiekosten."
+        ],
+        "provenance": {
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Controleer het volledige tarief per laadpunt in de Greenchoice Laden-app."
+        ],
+        "provenance": {
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://www.greenchoice.nl/mobiliteit/laadpas/"
+      },
+      "variants": [
+        {
+          "name": "Zonder abonnement",
+          "month": 0,
+          "once": null,
+          "start": 0.4,
+          "pct": null,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Abonnement",
+          "month": 3.99,
+          "once": null,
+          "start": null,
+          "pct": null,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Abonnement voor energieklanten",
+          "month": 2.99,
+          "once": null,
+          "start": null,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "slug": "laadkompas",
+      "naam": "Laadkompas",
+      "url": "https://laadkompas.nl/laadpas/",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://laadkompas.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Gratis aanvragen; geen aansluitkosten."
+        ],
+        "provenance": {
+          "bron": "https://laadkompas.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Zonder abonnement: geen vaste maandkosten.",
+          "Abonnement: € 4,78 per maand. Tijdelijke acties niet automatisch verwerkt."
+        ],
+        "provenance": {
+          "bron": "https://laadkompas.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": [
+          "Zonder abonnement: € 0,47 per sessie; abonnement: geen pas-starttarief."
+        ],
+        "provenance": {
+          "bron": "https://laadkompas.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Tarief van de laadpaal, naast eventuele paskosten. Controleer extra locatiekosten."
+        ],
+        "provenance": {
+          "bron": "https://laadkompas.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Locatiegebonden tarief in de app; geen uniforme kWh-prijs."
+        ],
+        "provenance": {
+          "bron": "https://laadkompas.nl/laadpas/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://laadkompas.nl/laadpas/"
+      },
+      "variants": [
+        {
+          "name": "Zonder abonnement",
+          "month": 0,
+          "once": 0,
+          "start": 0.47,
+          "pct": null,
+          "checked": "2026-10-25"
+        },
+        {
+          "name": "Abonnement",
+          "month": 4.78,
+          "once": 0,
+          "start": 0,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "slug": "electroverse",
+      "naam": "Octopus Electroverse",
+      "url": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+      "maandprijs_eur": {
+        "waarde": 0,
+        "provenance": {
+          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "kosten_pas": {
+        "waarde": [
+          "Electrocard wordt als gratis aangeboden; controleer de bestelvoorwaarden voor jouw land."
+        ],
+        "provenance": {
+          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "abonnement": {
+        "waarde": [
+          "Standaard aanmelden zonder abonnementskosten."
+        ],
+        "provenance": {
+          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "starttarief": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "laadtarief_ac": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "snellaadtarief": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse"
+      },
+      "variants": [
+        {
+          "name": "Standaard",
+          "month": 0,
+          "once": null,
+          "start": null,
+          "pct": null,
+          "checked": "2026-10-25"
+        }
+      ],
+      "aliases": [
+        "Electroverse",
+        "Octopus",
+        "Electrocard"
+      ]
+    },
+    {
+      "slug": "plugsurfing",
+      "naam": "Plugsurfing",
+      "url": "https://plugsurfing.com/blog/charging-card/",
+      "maandprijs_eur": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://plugsurfing.com/blog/charging-card/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "kosten_pas": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://plugsurfing.com/blog/charging-card/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "abonnement": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://plugsurfing.com/blog/charging-card/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "starttarief": {
+        "waarde": null,
+        "provenance": {
+          "bron": "https://plugsurfing.com/blog/charging-card/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "unknown"
+      },
+      "laadtarief_ac": {
+        "waarde": [
+          "Actuele AC-prijs per laadpunt in de Plugsurfing-app; er is geen bevestigde landelijke kWh-prijs."
+        ],
+        "provenance": {
+          "bron": "https://plugsurfing.com/blog/charging-card/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "snellaadtarief": {
+        "waarde": [
+          "Actuele DC-prijs per laadpunt in de app. De kaartprijs uit het oudere blog is niet als actueel bedrag overgenomen."
+        ],
+        "provenance": {
+          "bron": "https://plugsurfing.com/blog/charging-card/",
+          "bijgewerkt": "2026-10-25",
+          "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
+        },
+        "status": "verified"
+      },
+      "directReview": {
+        "checked": "2026-10-25",
+        "source": "https://plugsurfing.com/blog/charging-card/"
+      },
+      "variants": [],
+      "aliases": [
+        "Plug surfing"
+      ]
+    }
+  ],
+  "_laadheld": {
+    "opgehaald_op": "2026-10-25T09:00:58.641174+00:00",
+    "bron": "https://laadpas.co/laadpassen.json",
+    "bewerking": "Ongewijzigde bronvelden; ophaalmetadata toegevoegd. Geen scores of schattingen gebruikt voor de berekening.",
+    "directlyReviewed": 10,
+    "upstreamAvailable": false
+  }
+}

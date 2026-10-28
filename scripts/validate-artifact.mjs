@@ -1,0 +1,10 @@
+import {readFile} from 'node:fs/promises';
+const code=await readFile(new URL('../worker/index.js',import.meta.url),'utf8');
+const {default:app}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const {default:protectedApp}=await import('../worker/protected.mjs');
+if(typeof app?.fetch!=='function'||typeof protectedApp?.fetch!=='function')throw Error('Worker fetch ontbreekt');
+const config=JSON.parse(await readFile(new URL('../wrangler.jsonc',import.meta.url),'utf8'));
+if(config.name!=='laadheld'||config.main!=='worker/protected.mjs')throw Error('Onjuiste Cloudflare-entrypoint');
+const result=await protectedApp.fetch(new Request('https://test/'),{}, {waitUntil(){}});
+if(result.status!==503)throw Error('Worker moet gesloten blijven zonder wachtwoord');
+console.log('Cloudflare-entrypoint geldig; ontbrekend wachtwoord blokkeert toegang.');

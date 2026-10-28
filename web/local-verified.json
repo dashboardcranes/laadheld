@@ -1,0 +1,143 @@
+{
+  "checked": "2026-10-25",
+  "validFrom": "2026-10-01",
+  "reviewAfter": "2026-11-24",
+  "region": "Scheveningen",
+  "card": "Vattenfall InCharge",
+  "kwh": 0.4619,
+  "month": 0,
+  "once": 0,
+  "start": 0,
+  "points": [
+    {
+      "id": "NL-NUO-bc792e7d75a0414cd5f30f01dff4766a",
+      "address": "Gevers Deynootstraat 11",
+      "coordinates": [
+        4.286638,
+        52.113232
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-67dc971e4dc15a588c815b613e22f343",
+      "address": "Gevers Deynootweg 205",
+      "coordinates": [
+        4.289343,
+        52.117401
+      ],
+      "kw": 13.8,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-49514575255787a79f5e65be6fb86312",
+      "address": "Alkmaarsestraat 26",
+      "coordinates": [
+        4.287813,
+        52.114132
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-c8e0ea86d4124779f7db49922a4b4dd9",
+      "address": "Antonie Duyckstraat 66",
+      "coordinates": [
+        4.28951,
+        52.106468
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-3bf8bd0c6a1a293f51d8e1f8ebde6f94",
+      "address": "Arnhemsestraat 1",
+      "coordinates": [
+        4.288189,
+        52.111069
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-156fb891d17e1141f62e40d95c5425c8",
+      "address": "Arnhemsestraat 35",
+      "coordinates": [
+        4.28944,
+        52.111359
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-ce410e6a6ab3b66451531b224d54a33f",
+      "address": "Badhuiskade 20",
+      "coordinates": [
+        4.278498,
+        52.106964
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-9d5739f44fdbfbd25d0487db26b8dec5",
+      "address": "Badhuisweg 101",
+      "coordinates": [
+        4.291068,
+        52.107796
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-cbfc89863a736e2c4959efb6a4ebea66",
+      "address": "Badhuisweg 12",
+      "coordinates": [
+        4.28583,
+        52.111046
+      ],
+      "kw": 11.04,
+      "tariffId": "2000374062-2000011292"
+    },
+    {
+      "id": "NL-NUO-e953d3a1fba2ec6a2d32ebd529343b42",
+      "address": "Badhuisweg 40",
+      "coordinates": [
+        4.286914,
+        52.110432
+      ],
+      "kw": 13.8,
+      "tariffId": "2000374062-2000011292"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "https://incharge.vattenfall.nl/onze-tarieven",
+      "supports": "Gemeentelijke InCharge-palen Den Haag, eigen pas, kWh-prijs inclusief btw"
+    },
+    {
+      "url": "https://incharge.vattenfall.nl/laadpas",
+      "supports": "Gratis pas en abonnement; geen extra kosten op eigen netwerk"
+    },
+    {
+      "url": "https://www.denhaag.nl/nl/verkeer-en-vervoer/laadpalen-voor-elektrische-autos/",
+      "supports": "Gemeentelijke openbare laadpalen; parkeren apart"
+    },
+    {
+      "url": "https://opendata.ndw.nu/charging_point_locations.geojson.gz",
+      "supports": "Exacte laadpunt-ID, exploitant, AC-connector en gekoppeld tarief"
+    }
+  ],
+  "ndwCheck": {
+    "checkedAt": "2026-10-25T19:48:20.880Z",
+    "party": "NUO",
+    "tariffId": "2000374062-2000011292",
+    "energyExVat": 0.3817,
+    "vat": 21,
+    "components": [
+      "ENERGY"
+    ],
+    "restrictionStart": "2026-10-01",
+    "note": "Live API controle: uitsluitend energiecomponent; afgeronde consumentenprijs van officiële Vattenfall-pagina gebruikt."
+  }
+}

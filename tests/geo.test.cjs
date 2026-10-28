@@ -1,0 +1,3 @@
+const test=require('node:test'),assert=require('node:assert/strict'),{distanceKm,nearestLocations,normalizeSearch}=require('../web/geo.js'),fs=require('node:fs'),zlib=require('node:zlib');
+test('nearest point sort respects longitude latitude order and excludes missing coordinates',()=>{let origin={latitude:52.11,longitude:4.28};let a=[0,0,0,0,0,[4.28,52.11]],b=[0,0,0,0,0,[4.29,52.11]],c=[0,0,0,0,0,null];assert.equal(distanceKm(origin,a[5]),0);assert(distanceKm(origin,b[5])>.6);assert.deepEqual(nearestLocations([c,b,a],origin),[a,b])});
+test('street search handles accents whitespace and case',()=>assert.equal(normalizeSearch('  Één STRAAT  '),'een straat'));
