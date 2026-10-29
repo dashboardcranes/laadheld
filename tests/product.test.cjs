@@ -10,3 +10,5 @@ test('source tariff never becomes a named payment and conditional tariffs stay e
 test('all screen sizes use a stable panel, never a marker popup',()=>{const map=fs.readFileSync('web/map.js','utf8');assert.doesNotMatch(map,/bindPopup|L\.popup/);const html=fs.readFileSync('web/index.html','utf8'),nav=html.match(/<nav>(.*?)<\/nav>/s)[1];assert.doesNotMatch(nav,/bronnen/);assert.match(html,/<footer>.*bronnen\.html/s)});
 
 test('published rounding follows Wh and seconds rather than assuming continuous billing',async()=>{const {publishedModel}=await load();const t={country_code:'NL',currency:'EUR',elements:[{price_components:[{type:'ENERGY',price:.4,vat:21,step_size:1000},{type:'TIME',price:2,vat:21,step_size:3600}]}]};const p=publishedModel(t,'2026-10-29');assert(p.model);const q=publishedQuote(p.model,{kwh:1.1,n:1,parking:0,minutes:1,idleMinutes:0});assert.ok(Math.abs(q.total-(2*.484+2.42))<1e-9)});
+
+test('older fixed fees remain visible without renewing their date',()=>{const {variantPrefill}=require('../web/catalog.js');assert.deepEqual(variantPrefill({month:3,checked:'2026-07-01'},'2026-10-29'),{month:3})});

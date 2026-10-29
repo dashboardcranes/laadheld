@@ -19,7 +19,7 @@ function catalogStatus(card,today){
  return {label:'Algemene paskosten beschikbaar',reason:'Maandbedrag en transactieregels beschreven. De laadprijs hangt af van het gekozen laadpunt.',complete:true};
 }
 function matchesCard(card,query){return [card.naam,card.slug,...(card.aliases||[])].join(' ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(String(query).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim())}
-function variantPrefill(variant,today){if(!variant)return {};let age=(new Date(today)-new Date(variant.checked))/86400000;if(!Number.isFinite(age)||age<0||age>30)return {};return Object.fromEntries(['month','once','start','pct'].filter(k=>variant[k]!==null&&variant[k]!==undefined&&typeof variant[k]==='number'&&variant[k]>=0).map(k=>[k,variant[k]]))}
+function variantPrefill(variant,today){if(!variant)return {};let age=(new Date(today)-new Date(variant.checked))/86400000;if(!Number.isFinite(age)||age<0)return {};return Object.fromEntries(['month','once','start','pct'].filter(k=>variant[k]!==null&&variant[k]!==undefined&&typeof variant[k]==='number'&&variant[k]>=0).map(k=>[k,variant[k]]))}
 if(typeof module!=='undefined')module.exports={safeSourceURL,sourceDate,validateCatalog,cardCheckedDate,fieldKnown,catalogCoverage,matchesCard,variantPrefill,catalogStatus};
 if(typeof document!=='undefined'){
 let catalogData=null,catalogNotice='',live=false;

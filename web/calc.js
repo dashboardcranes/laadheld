@@ -36,7 +36,7 @@ function calculate(plans,locations,max=1,opts={}){
  // Avoid recommending a second card which is never used.
  if(set.length>1&&new Set(routes.map(r=>r.plan.id)).size<2)return [];
  let fixed=set.reduce((s,p)=>s+ +p.month,0),once=0;
- return [{set,variable,fixed,once,indicative:routes.some(r=>tariffValidity(r.plan.tariffs[r.location.id],opts.today||new Date().toISOString().slice(0,10))==='older'),month:variable+fixed,year:12*(variable+fixed),routes}];
+ return [{set,variable,fixed,once,indicative:set.some(p=>dateAge(p.costsChecked||p.importedSource?.checked,opts.today||new Date().toISOString().slice(0,10))>30&&Number.isFinite(dateAge(p.costsChecked||p.importedSource?.checked,opts.today||new Date().toISOString().slice(0,10))))||routes.some(r=>tariffValidity(r.plan.tariffs[r.location.id],opts.today||new Date().toISOString().slice(0,10))==='older'),month:variable+fixed,year:12*(variable+fixed),routes}];
  });
 }
 if(typeof module!=='undefined')module.exports={tariffValidity,comparisonState,session,calculate,dateAge,freshDate,MAX_TARIFF_AGE_DAYS};
