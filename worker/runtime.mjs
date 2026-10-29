@@ -15,7 +15,7 @@ async function indexedTariffs(env,country,party,ids){
  const response=await env.TARIFFS.fetch(new Request('https://index/tariffs/'+bucket+'.json'));
  if(!response.ok)throw Error('Tariefindex niet bereikbaar');
  const data=await response.json();
- if(!data.fetchedAt||Date.now()-Date.parse(data.fetchedAt)>7*86400000)throw Error('Tariefindex moet opnieuw worden opgehaald');
+ if(!Number.isFinite(Date.parse(data.fetchedAt))||Date.now()-Date.parse(data.fetchedAt)>7*86400000)throw Error('Tariefindex moet opnieuw worden opgehaald');
  const tariff=data.tariffs[key];
  if(tariff&&(tariff.country_code!==country||tariff.party_id!==party||tariff.id!==id))throw Error('Ongeldige tariefkoppeling');
  return {tariff:tariff||null,fetchedAt:data.fetchedAt};
