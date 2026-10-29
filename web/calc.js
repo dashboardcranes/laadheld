@@ -16,14 +16,14 @@ function calculate(plans,locations,max=1,opts={}){
  const active=locations.filter(l=>num(l.n)&&+l.n>0);if(!active.length||active.some(l=>!Number.isInteger(+l.n)))return [];
  let sets=plans.map(p=>[p]);if(max===2)for(let i=0;i<plans.length;i++)for(let j=i+1;j<plans.length;j++)if(plans[i].provider!==plans[j].provider||!plans[i].provider)sets.push([plans[i],plans[j]]);
  return sets.flatMap(set=>{
- if(set.some(p=>!num(p.month)||!num(p.once)))return [];
+ if(set.some(p=>!num(p.month)))return [];
  let variable=0,routes=[];
  for(let l of active){let choices=set.map(p=>({p,c:session(p.tariffs[l.id],l,opts)})).filter(x=>x.c).sort((a,b)=>a.c.total-b.c.total);if(!choices.length)return [];
  const {p,c}=choices[0];variable+=c.total*l.n;routes.push({location:l,plan:p,breakdown:c,total:c.total*l.n});}
  // Avoid recommending a second card which is never used.
  if(set.length>1&&new Set(routes.map(r=>r.plan.id)).size<2)return [];
- let fixed=set.reduce((s,p)=>s+ +p.month,0),once=set.reduce((s,p)=>s+(p.owned?0:+p.once),0);
- return [{set,variable,fixed,once,month:variable+fixed,year:12*(variable+fixed)+once,routes}];
+ let fixed=set.reduce((s,p)=>s+ +p.month,0),once=0;
+ return [{set,variable,fixed,once,month:variable+fixed,year:12*(variable+fixed),routes}];
  });
 }
 if(typeof module!=='undefined')module.exports={session,calculate,dateAge,freshDate,MAX_TARIFF_AGE_DAYS};

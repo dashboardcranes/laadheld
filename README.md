@@ -50,3 +50,7 @@ Persoonlijke vergelijkingen verhuizen niet automatisch mee vanaf de oude Sites-U
 GitHub Actions (`nightly-refresh.yml`) valideert dagelijks om 02:37 UTC de NDW-tariefbron en commit alleen een klein verversingsverzoek. De bestaande Cloudflare Git-koppeling bouwt en publiceert vervolgens een nieuwe tariefindex. Nederland: 03:37 wintertijd / 04:37 zomertijd. Een fout bij downloaden of bouwen laat de bestaande productieversie intact; na zeven dagen zonder geslaagde indexverversing worden nieuwe prijsbevestigingen geblokkeerd. Een nieuwe ophaaldatum verandert de tariefwijzigingsdatum of officiële controle van laadpasvoorwaarden niet.
 
 De workflow kan ook handmatig worden gestart. De eerste wijziging aan workflow of refreshscript start een verificatierun. De status en eventuele fouten zijn terug te vinden in GitHub Actions en Cloudflare Builds. Geen extra API-token of betaalde dienst vereist.
+
+## Kostenbasis
+
+Op verzoek van de eigenaar tellen eenmalige pas- en verzendkosten niet mee in sessie-, maand-, jaarberekeningen, rangschikking, omslagpunten en CSV-export. Het oude gecombineerde veld `once` blijft voor compatibiliteit bewaard, maar beïnvloedt de uitkomst niet en ontbrekende waarden blokkeren geen vergelijking. Abonnementen en alle toepasselijke laadkosten blijven vereist.
