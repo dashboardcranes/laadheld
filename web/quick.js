@@ -10,7 +10,7 @@ function localQuote(data,input,date){
 function networkChoices(points,registry=[]){
  const map=new Map(registry.map(n=>[n.id,{id:n.id,name:n.name,count:0}]));
  for(const p of points){const id=p.party||'unknown';if(!map.has(id))map.set(id,{id,name:(p.operator||'Onbekende exploitant').trim(),count:0});map.get(id).count++;}
- return [...map.values()].sort((a,b)=>a.name.localeCompare(b.name,'nl'));
+ const names=new Map();for(const n of map.values()){const key=n.name.trim().toLowerCase();names.set(key,(names.get(key)||0)+1)}return [...map.values()].map(n=>({...n,name:names.get(n.name.trim().toLowerCase())>1?n.name+' ('+n.id+')':n.name})).sort((a,b)=>a.name.localeCompare(b.name,'nl'));
 }
 function publishedQuote(model,input){
  if(!model||!['kwh','start','minute','idle'].every(k=>typeof model[k]==='number'&&Number.isFinite(model[k])&&model[k]>=0))return null;
@@ -30,7 +30,7 @@ if(typeof document!=='undefined'){
  const option=()=>quote?.options?.find(o=>o.key===selectedKey);
  function renderQuote(){
  const o=option();$('quick-import').disabled=!o;$('quick-map').disabled=!selectedPoint;
- if(!o){result.innerHTML=quote?(quote.published?.model?'':'<p class="notice">'+esc(quote.reason||'Nog geen volledig prijsadvies voor dit punt.')+'</p>')+publishedTariffs():'<p>Kies een laadpunt om de prijs te controleren.</p>';$('quick-evidence').textContent='Landelijk zoeken en kaartdekking; directe prijsberekening voor ondersteunde eigen-netwerkopties. Niet alle passen of laadpunten hebben al een volledige prijs.';return}
+ if(!o){result.innerHTML=quote?(quote.published?.model?'':'<p class="notice">'+esc(quote.reason||'Nog geen volledig prijsadvies voor dit punt.')+'</p>')+publishedTariffs():'<p>Kies een laadpunt om de prijs te controleren.</p>';$('quick-evidence').textContent='Gepubliceerde paalkosten en bevestigde betaalmethoden worden afzonderlijk getoond. Een paaltarief is geen automatische prijs voor elke laadpas.';return}
  const q=localQuote(o,input(),localDate());$('quick-import').disabled=!!q.error;if(q.error){result.innerHTML='<p class="notice">'+esc(q.error)+'</p>';return}
  const quotes=quote.options.map(v=>localQuote(v,input(),localDate())),closePrices=quotes.length>1&&quotes.every(q=>!q.error)&&Math.max(...quotes.map(q=>q.total))-Math.min(...quotes.map(q=>q.total))<=.50&&Math.max(...quotes.map(q=>q.month))-Math.min(...quotes.map(q=>q.month))<=2;
  const label=closePrices?'VRIJWEL GELIJK GEPRIJSD':quote.options.length>1?'BETAALOPTIES OP DIT LAADPUNT':'ÉÉN ONDERBOUWDE BETAALOPTIE';
@@ -58,7 +58,7 @@ if(typeof document!=='undefined'){
  function listPoints(list){points=list;updateNetworks();showPoints()}
  async function loadArea(coordinates,label){lastArea={coordinates,label};const turn=++areaGeneration;$('quick-area-status').textContent='Laadpunten rond '+label+' ophalen…';const radius=+$('quick-radius').value,dy=radius/111.2,dx=radius/(111.2*Math.cos(coordinates[1]*Math.PI/180)),bbox=[coordinates[0]-dx,coordinates[1]-dy,coordinates[0]+dx,coordinates[1]+dy];
  try{const r=await fetch('/api/ndw/map?'+new URLSearchParams({bbox:bbox.join(',')}),{cache:'no-store',signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error();const d=await r.json();if(turn!==areaGeneration)return;const ps=(d.features||[]).map(f=>{const p=f.properties||{},groups=p.availabilities||[];return {id:f.id,address:p.address||f.id,operator:p.operator_name||'Onbekende exploitant',party:p.cpo_id||'unknown',coordinates:f.geometry?.coordinates,kw:Math.max(0,...groups.map(g=>+g.power_max/1000||0)),type:groups.some(g=>g.power_type==='DC')?'DC':'AC'}}).filter(p=>p.coordinates?.length===2&&distanceKm({longitude:coordinates[0],latitude:coordinates[1]},p.coordinates)<=radius).sort((a,b)=>distanceKm({longitude:coordinates[0],latitude:coordinates[1]},a.coordinates)-distanceKm({longitude:coordinates[0],latitude:coordinates[1]},b.coordinates));
- listPoints(ps);$('quick-area-status').textContent=`${ps.length} laadpunten binnen ${radius} km van ${label}. ${ps.filter(p=>['NUO','FAS'].includes(p.party)).length} punten bij ondersteunde netwerken; de prijs wordt per gekozen punt gecontroleerd.${d.limitReached?' De bronlimiet is bereikt; verklein de straal voor een volledige selectie.':''}`;document.dispatchEvent(new CustomEvent('laadheld:focus-point',{detail:{coordinates,zoom:radius>3?12:14}}));
+ listPoints(ps);$('quick-area-status').textContent=`${ps.length} laadpunten binnen ${radius} km van ${label}. De gepubliceerde paalkosten en beschikbare betaalmethoden worden per gekozen punt opgehaald.${d.limitReached?' De bronlimiet is bereikt; verklein de straal voor een volledige selectie.':''}`;document.dispatchEvent(new CustomEvent('laadheld:focus-point',{detail:{coordinates,zoom:radius>3?12:14}}));
  }catch{if(turn===areaGeneration)$('quick-area-status').textContent='Laadpunten in dit gebied konden niet worden geladen. De bestaande selectie blijft beschikbaar.'}}
  $('quick-radius').addEventListener('change',()=>{if(lastArea)loadArea(lastArea.coordinates,lastArea.label)});for(const id of ['quick-network','quick-type'])$(id).addEventListener('change',showPoints);
 
