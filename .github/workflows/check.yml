@@ -1,6 +1,8 @@
 name: Controleer Laadheld
 on:
   push:
+    paths-ignore:
+      - data/nightly-refresh.json
   pull_request:
 permissions:
   contents: read

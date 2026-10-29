@@ -403,13 +403,15 @@
         "status": "verified"
       },
       "kosten_pas": {
-        "waarde": null,
+        "waarde": [
+          "Gratis laadpas aan te vragen via de Shell App; aparte verzendkosten zijn op deze pagina niet gespecificeerd."
+        ],
+        "status": "partial",
         "provenance": {
-          "bron": "https://www.shell.nl/elektrisch-opladen/Tarieven.html",
-          "bijgewerkt": "2026-10-25",
+          "bron": "https://www.shell.nl/elektrisch-opladen.html",
+          "bijgewerkt": "2026-10-29",
           "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
-        },
-        "status": "unknown"
+        }
       },
       "abonnement": {
         "waarde": [
@@ -583,13 +585,15 @@
         "status": "verified"
       },
       "kosten_pas": {
-        "waarde": null,
+        "waarde": [
+          "Verzendkosten laadpas: € 1,95, op de eerste factuur."
+        ],
+        "status": "verified",
         "provenance": {
-          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/",
-          "bijgewerkt": "2026-10-25",
+          "bron": "https://www.greenchoice.nl/mobiliteit/laadpas/voorwaarden/",
+          "bijgewerkt": "2026-10-29",
           "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
-        },
-        "status": "unknown"
+        }
       },
       "abonnement": {
         "waarde": [
@@ -641,7 +645,7 @@
       {
         "name": "Zonder abonnement",
         "month": 0,
-        "once": null,
+        "once": 1.95,
         "start": 0.4,
         "pct": null,
         "checked": "2026-10-25"
@@ -649,7 +653,7 @@
       {
         "name": "Abonnement",
         "month": 3.99,
-        "once": null,
+        "once": 1.95,
         "start": null,
         "pct": null,
         "checked": "2026-10-25"
@@ -657,7 +661,7 @@
       {
         "name": "Abonnement voor energieklanten",
         "month": 2.99,
-        "once": null,
+        "once": 1.95,
         "start": null,
         "pct": null,
         "checked": "2026-10-25"
@@ -774,14 +778,14 @@
       },
       "kosten_pas": {
         "waarde": [
-          "Electrocard wordt als gratis aangeboden; controleer de bestelvoorwaarden voor jouw land."
+          "Gratis Electrocard; eventuele aparte verzendkosten zijn op deze pagina niet gespecificeerd."
         ],
+        "status": "partial",
         "provenance": {
-          "bron": "https://electroverse.com/community/electroverse-features/a-beginner-s-guide-to-octopus-electroverse",
-          "bijgewerkt": "2026-10-25",
+          "bron": "https://electroverse.com/nl-NL",
+          "bijgewerkt": "2026-10-29",
           "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
-        },
-        "status": "verified"
+        }
       },
       "abonnement": {
         "waarde": [

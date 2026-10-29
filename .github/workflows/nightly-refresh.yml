@@ -1,0 +1,35 @@
+name: Nachtelijke tariefverversing
+on:
+  push:
+    paths:
+      - .github/workflows/nightly-refresh.yml
+      - scripts/nightly-refresh.mjs
+  schedule:
+    # 03:37 Nederland (winter), 04:37 (zomer), na de nachtelijke NDW-update.
+    - cron: '37 2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nightly-tariff-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/nightly-refresh.mjs
+      - name: Publiceer via bestaande Cloudflare Git-koppeling
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/nightly-refresh.json
+          git commit -m 'Refresh nightly NDW source data'
+          git pull --rebase origin main
+          git push origin HEAD:main

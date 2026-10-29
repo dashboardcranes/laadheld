@@ -11,6 +11,7 @@ if(typeof module!=='undefined')module.exports={localQuote};
 if(typeof document!=='undefined'){
  let initial=null,points=[],selectedPoint=null,quote=null,selectedKey='',generation=0,controller,places=[],areaGeneration=0,lastArea=null;
  const pointEl=$('quick-point'),result=$('quick-result'),statusEl=$('quick-status');
+ (async()=>{try{const r=await fetch('/api/data-status',{cache:'no-store'});if(!r.ok)return;const d=await r.json();const el=$('data-status');if(el)el.textContent='Tariefbron bijgewerkt: '+new Intl.DateTimeFormat('nl-NL',{timeZone:'Europe/Amsterdam',dateStyle:'short',timeStyle:'short'}).format(new Date(d.fetchedAt))+' · nachtelijke verversing rond 03:37 (winter) / 04:37 (zomer).'}catch{}})();
  const localDate=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Amsterdam',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  const input=()=>({kwh:$('quick-kwh').value,n:$('quick-sessions').value,parking:$('quick-parking').value,current:$('quick-current').value,owned:$('quick-owned').checked});
  const option=()=>quote?.options?.find(o=>o.key===selectedKey);

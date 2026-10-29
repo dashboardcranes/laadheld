@@ -1,0 +1,13 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {gunzipSync} from 'node:zlib';
+const source='https://opendata.ndw.nu/charging_point_tariffs_ocpi.json.gz';
+const response=await fetch(source,{signal:AbortSignal.timeout(90000)});
+if(!response.ok)throw Error('NDW unavailable: '+response.status);
+let bytes=Buffer.from(await response.arrayBuffer());
+if(bytes[0]===31&&bytes[1]===139)bytes=gunzipSync(bytes);
+const data=JSON.parse(bytes.toString());
+if(!Array.isArray(data)||!data.length||data.some(t=>!t.id||!t.party_id||!Array.isArray(t.elements)))throw Error('Invalid NDW source; keep deployed version');
+await mkdir('data',{recursive:true});
+await writeFile('data/nightly-refresh.json',JSON.stringify({source,requestedAt:new Date().toISOString(),sourceModified:response.headers.get('last-modified'),count:data.length,sha256:createHash('sha256').update(bytes).digest('hex')},null,2)+'\n');
+console.log(`Validated ${data.length} tariffs; request nightly publication`);
