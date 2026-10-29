@@ -54,3 +54,11 @@ De workflow kan ook handmatig worden gestart. De eerste wijziging aan workflow o
 ## Kostenbasis
 
 Op verzoek van de eigenaar tellen eenmalige pas- en verzendkosten niet mee in sessie-, maand-, jaarberekeningen, rangschikking, omslagpunten en CSV-export. Het oude gecombineerde veld `once` blijft voor compatibiliteit bewaard, maar beïnvloedt de uitkomst niet en ontbrekende waarden blokkeren geen vergelijking. Abonnementen en alle toepasselijke laadkosten blijven vereist.
+
+## Dekking en prijszekerheid
+
+Iedere build koppelt unieke Nederlandse NDW-GeoJSON-records (`country=NLD`) aan de landelijke OCPI-tarieven via landcode, CPO-id en tarief-id. `dist/coverage.json` telt complete definities, berekenbare exploitantmodellen, een benoemde betaalmethode en meerdere betaalmethoden afzonderlijk. Records zonder koppeling blijven in de noemer staan. Een record kan meerdere aansluitingen bevatten. De doelstelling van 99% geldt niet als behaald zolang de meting dat niet aantoont.
+
+De modellen voor gepubliceerde exploitantkosten ondersteunen vaste kWh-, sessie-, aansluit- en parkeertijdkosten met bekende btw en expliciete afrekenstappen. Voorwaardelijke tijdvensters, staffels, onbekende btw of ontbrekende componenten worden niet ingevuld. Een exploitantmodel wordt nooit als eindprijs voor een externe laadpas geïmporteerd.
+
+Oudere handmatig bevestigde tarieven blijven als indicatie berekenbaar; een expliciete vervaldatum of bekende wijziging blokkeert ze. Bij historische opties wordt geen actuele winnaar geclaimd. Vrijwel gelijk geprijsde bekende opties vereisen maximaal € 0,50 verschil per bezoek en € 2 per maand. De laatst geopende bron, tariefwijzigingsdatum en inhoudelijke aanbiedercontrole blijven afzonderlijke begrippen.

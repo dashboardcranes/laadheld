@@ -236,12 +236,11 @@
       },
       "starttarief": {
         "waarde": [
-          "Flex: € 0,31 per sessie. Comfort: geen regulier starttarief.",
-          "Extra € 0,48 per sessie via Hubject, Gireve of e-clearing."
+          "Flex: € 0,31 per sessie; bij niet-E-Flux-laadpunten daarnaast € 0,024 per kWh. Comfort: € 3,23 per maand, zonder pas-starttarief of toeslag op niet-E-Flux-laadpunten. Laadpaalkosten blijven van toepassing."
         ],
         "provenance": {
           "bron": "https://www.e-flux.io/nl/producten/laadpassen",
-          "bijgewerkt": "2026-10-25",
+          "bijgewerkt": "2026-10-29",
           "bron_type": "Officiële aanbiederpagina, inhoudelijk gecontroleerd"
         },
         "status": "verified"

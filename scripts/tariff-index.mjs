@@ -17,3 +17,5 @@ const metadata={source:url,fetchedAt:new Date().toISOString(),sourceModified:res
 for(let start=0;start<buckets.length;start+=64)await Promise.all(buckets.slice(start,start+64).map((tariffs,j)=>writeFile(`dist/tariffs/${(start+j).toString(16).padStart(3,'0')}.json`,JSON.stringify({...metadata,tariffs}))));
 await writeFile('dist/tariffs/manifest.json',JSON.stringify(metadata));
 console.log(`Indexed ${count} source tariffs in ${buckets.length} small files`);
+const {buildCoverage}=await import('./coverage.mjs');
+await buildCoverage(tariffs,metadata);

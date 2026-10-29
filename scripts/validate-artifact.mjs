@@ -8,3 +8,7 @@ if(config.name!=='laadheld'||config.main!=='worker/public.mjs')throw Error('Onju
 const result=await publicApp.fetch(new Request('https://test/'),{}, {waitUntil(){}});
 if(result.status!==200||result.headers.has('WWW-Authenticate'))throw Error('Worker moet openbaar openen zonder wachtwoord');
 console.log('Cloudflare-entrypoint geldig; site opent openbaar zonder wachtwoord.');
+
+// Browser scripts are classic scripts; syntax checks catch errors before publication.
+const {execFileSync}=await import('node:child_process');
+for(const name of ['app','calc','catalog','quick','map'])execFileSync(process.execPath,['--check',`web/${name}.js`],{stdio:'pipe'});

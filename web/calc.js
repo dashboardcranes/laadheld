@@ -3,8 +3,21 @@ const MAX_TARIFF_AGE_DAYS=30;
 function dateAge(value,today){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return Infinity;let d=new Date(value+'T00:00:00Z'),now=new Date(today+'T00:00:00Z');if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==value)return Infinity;return Math.floor((now-d)/86400000)}
 function freshDate(value,today){let age=dateAge(value,today);return age>=0&&age<=MAX_TARIFF_AGE_DAYS}
 const num=v=>v!==''&&v!==null&&v!==undefined&&Number.isFinite(+v)&&+v>=0;
+function tariffValidity(t,today){
+ const age=dateAge(t?.date,today);
+ if(!Number.isFinite(age)||age<0)return 'invalid';
+ if(t.invalidated===true||t.validFrom&&t.validFrom>today||t.validUntil&&t.validUntil<today)return 'invalid';
+ return age>MAX_TARIFF_AGE_DAYS?'older':'recent';
+}
+function comparisonState(rows,mode='month'){
+ if(rows.some(r=>r.indicative))return {kind:'indicative',label:'Indicatieve vergelijking',reason:'Een of meer tarieven zijn langer dan 30 dagen niet gecontroleerd. De berekening blijft zichtbaar; een actuele winnaar is niet bevestigd.'};
+ if(rows.length<2)return {kind:'single',label:'Enige berekenbare optie'};
+ const [a,b]=rows,monthly=mode==='session'?Math.abs(a.total-b.total)*(a.routes[0]?.location.n||1)+Math.abs((a.fixed||0)-(b.fixed||0)):Math.abs(a.month-b.month),perSession=mode==='session'?Math.abs(a.total-b.total):Math.max(...a.routes.map(r=>{const other=b.routes.find(x=>x.location.id===r.location.id);return other?Math.abs(r.breakdown.total-other.breakdown.total):Infinity}));
+ if(perSession<=.50&&monthly<=2)return {kind:'close',label:'Vrijwel gelijk geprijsd',reason:'Het verschil is maximaal € 0,50 per bezoek en € 2 per maand binnen de bekende kosten. Kies op gebruiksgemak en bereik.'};
+ return {kind:'ranked',label:'Goedkoopste gecontroleerde optie binnen jouw invoer'};
+}
 function session(t,l,{demo=false,today=new Date().toISOString().slice(0,10)}={}){
- if(!t||!t.available||!t.confirmed||(!demo&&t.demo)||!t.date||t.date>today||(!demo&&(!t.source?.trim()||!freshDate(t.date,today)))||['kwh','start','minute','free','pct','idle','grace','other'].some(k=>!num(t[k]))||!['','session','energy'].includes(t.scope)||(!num(t.cap)&&t.cap!=='')||['kwh','minutes','idleMinutes','parking'].some(k=>!num(l[k])))return null;
+ if(!t||!t.available||!t.confirmed||(!demo&&t.demo)||!t.date||t.date>today||(!demo&&(!t.source?.trim()||tariffValidity(t,today)==='invalid'))||['kwh','start','minute','free','pct','idle','grace','other'].some(k=>!num(t[k]))||!['','session','energy'].includes(t.scope)||(!num(t.cap)&&t.cap!=='')||['kwh','minutes','idleMinutes','parking'].some(k=>!num(l[k])))return null;
  let energy=l.kwh*t.kwh,start=+t.start;
  let time=Math.max(0,l.minutes-t.free)*t.minute;
  if(t.cap!=='')time=Math.min(time,+t.cap);
@@ -23,7 +36,7 @@ function calculate(plans,locations,max=1,opts={}){
  // Avoid recommending a second card which is never used.
  if(set.length>1&&new Set(routes.map(r=>r.plan.id)).size<2)return [];
  let fixed=set.reduce((s,p)=>s+ +p.month,0),once=0;
- return [{set,variable,fixed,once,month:variable+fixed,year:12*(variable+fixed),routes}];
+ return [{set,variable,fixed,once,indicative:routes.some(r=>tariffValidity(r.plan.tariffs[r.location.id],opts.today||new Date().toISOString().slice(0,10))==='older'),month:variable+fixed,year:12*(variable+fixed),routes}];
  });
 }
-if(typeof module!=='undefined')module.exports={session,calculate,dateAge,freshDate,MAX_TARIFF_AGE_DAYS};
+if(typeof module!=='undefined')module.exports={tariffValidity,comparisonState,session,calculate,dateAge,freshDate,MAX_TARIFF_AGE_DAYS};
