@@ -16,5 +16,10 @@
   },
   "build": {
     "command": "npm run build"
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "TARIFFS",
+    "run_worker_first": true
   }
 }

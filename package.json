@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node scripts/embed.mjs",
+    "build": "node scripts/tariff-index.mjs && node scripts/embed.mjs",
     "test": "node --test tests/*.test.cjs",
     "validate": "node scripts/validate-artifact.mjs",
     "deploy": "npm run build && wrangler deploy",

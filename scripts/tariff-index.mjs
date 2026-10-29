@@ -1,0 +1,19 @@
+import {mkdir,writeFile,readFile} from 'node:fs/promises';
+import {gunzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
+const url='https://opendata.ndw.nu/charging_point_tariffs_ocpi.json.gz';
+const response=process.env.NDW_TARIFF_FILE?null:await fetch(url,{signal:AbortSignal.timeout(90000)});
+if(response&&!response.ok)throw Error('NDW download failed: '+response.status);
+let bytes=process.env.NDW_TARIFF_FILE?await readFile(process.env.NDW_TARIFF_FILE):Buffer.from(await response.arrayBuffer());
+if(bytes[0]===31&&bytes[1]===139)bytes=gunzipSync(bytes);
+const tariffs=JSON.parse(bytes.toString());
+if(!Array.isArray(tariffs)||!tariffs.length)throw Error('Empty or invalid tariff source');
+const buckets=Array.from({length:4096},()=>Object.create(null));let count=0;
+for(const t of tariffs){if(!t.country_code||!t.party_id||!t.id||!Array.isArray(t.elements))throw Error('Invalid NDW tariff');
+const key=JSON.stringify([t.country_code,t.party_id,t.id]);const hash=createHash('sha256').update(key).digest('hex');const bucket=buckets[parseInt(hash.slice(0,3),16)];
+if(bucket[key]&&JSON.stringify(bucket[key])!==JSON.stringify(t))throw Error('Conflicting tariff identity');if(!bucket[key])count++;bucket[key]=t;}
+await mkdir('dist/tariffs',{recursive:true});
+const metadata={source:url,fetchedAt:new Date().toISOString(),sourceModified:response?.headers.get('last-modified')||null,count};
+for(let start=0;start<buckets.length;start+=64)await Promise.all(buckets.slice(start,start+64).map((tariffs,j)=>writeFile(`dist/tariffs/${(start+j).toString(16).padStart(3,'0')}.json`,JSON.stringify({...metadata,tariffs}))));
+await writeFile('dist/tariffs/manifest.json',JSON.stringify(metadata));
+console.log(`Indexed ${count} source tariffs in ${buckets.length} small files`);
