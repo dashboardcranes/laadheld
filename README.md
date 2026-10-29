@@ -62,3 +62,9 @@ Iedere build koppelt unieke Nederlandse NDW-GeoJSON-records (`country=NLD`) aan 
 De modellen voor gepubliceerde exploitantkosten ondersteunen vaste kWh-, sessie-, aansluit- en parkeertijdkosten met bekende btw en expliciete afrekenstappen. Voorwaardelijke tijdvensters, staffels, onbekende btw of ontbrekende componenten worden niet ingevuld. Een exploitantmodel wordt nooit als eindprijs voor een externe laadpas geïmporteerd.
 
 Oudere handmatig bevestigde tarieven blijven als indicatie berekenbaar; een expliciete vervaldatum of bekende wijziging blokkeert ze. Bij historische opties wordt geen actuele winnaar geclaimd. Vrijwel gelijk geprijsde bekende opties vereisen maximaal € 0,50 verschil per bezoek en € 2 per maand. De laatst geopende bron, tariefwijzigingsdatum en inhoudelijke aanbiedercontrole blijven afzonderlijke begrippen.
+
+## SEO
+
+Het bestaande eigen domein https://laadheld.nl is de canonieke host; www verwijst daar al naartoe. Homepage en drie oorspronkelijke uitlegpagina’s bevatten servergeleverde HTML, unieke titels en beschrijvingen, canonieke URLs en passende WebSite/WebApplication/WebPage-gegevens zonder verzonnen beoordelingen. `/robots.txt` verwijst naar `/sitemap.xml`; de sitemap bevat alleen indexeerbare canonieke pagina’s en geen kunstmatig dagelijks vernieuwde lastmod-datums. API- en JSON-responses krijgen een noindex-header zonder het renderen van de app te blokkeren. Bestandsaliases verwijzen permanent naar de gekozen pagina-URLs. De bestaande Worker-testhost blijft bruikbaar met canonieke verwijzingen naar het eigen domein.
+
+Er zijn geen advertentiekosten, betaalde SEO-diensten of backlinks aangekocht. Search Console-verificatie en indexeringsverzoeken zijn niet uitgevoerd zonder gekoppelde accounttoegang. Indexering en posities in Google zijn geen gegarandeerd resultaat.

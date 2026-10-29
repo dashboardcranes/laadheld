@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tariffs/
+
+Sitemap: https://laadheld.nl/sitemap.xml
