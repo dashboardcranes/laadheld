@@ -1,7 +1,7 @@
 {
   "source": "https://opendata.ndw.nu/charging_point_tariffs_ocpi.json.gz",
-  "requestedAt": "2026-11-01T09:39:37.372Z",
-  "sourceModified": "Sun, 01 Nov 2026 05:02:00 GMT",
-  "count": 105477,
-  "sha256": "73c36056e16aca4ab2448d41b10a0f7523e5a9b3445e1812afa4abb0cdc4b08b"
+  "requestedAt": "2026-11-02T09:54:19.899Z",
+  "sourceModified": "Mon, 02 Nov 2026 07:33:00 GMT",
+  "count": 105486,
+  "sha256": "102b96a4e1150c136ad79ae77adefff11befda3bd1dbd77c8f0932b3d695d13c"
 }
